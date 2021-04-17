@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: whitesmoke;
+}
+
+
+h1{
+    padding: 1rem;
+    font-size: 3rem;
+    color: #EABE3F;    
+}
+
+img{
+    margin-top: 2rem;
+    width: 100%;
+    height: 250px;
+}
+
+p{
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+span{    
+    font-size: 1.8rem;
+    padding: 1rem;    
+}
+
+.container{    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    color: white;
+}
+
+.card{
+    padding: 1rem; 
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
+
+.estadisticas{
+    display: flex;
+    justify-content: space-between;    
+}
+
+/*navbar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #d20222;
+}
+
+.navbar-buscar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #d20222;
+}
+
+.buscar{
+    border-radius: 1rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 60%;
+}
+
+/*pokebola*/
+.pokebola{
+	height: 3rem;
+	width: 3rem;
+	border: 0.3rem solid black;
+	border-radius: 50%;
+	background-color: white; 
+}
+
+.pokebola::before{
+	content: "";
+	position: absolute;
+    margin-left: -1.2rem;
+    margin-top: 0;
+	height: 1.2rem;
+	width: 2.5rem;
+	background-color: red;
+	border-radius: 6rem 6rem 0 0;
+}
+
+.interior{
+  position: absolute;
+  height: 0.5rem;
+  width: 2.5rem;
+  background-color: black;
+  margin-top: 1rem;  
+}
+
+.interior::before{
+  content: "";
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: -0.3rem;
+  margin-left: -0.4rem;  
+}
+
+.interior::after{
+  content: "";
+  position: absolute;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -0.1rem;
+  margin-left: -0.1rem;
+}
+
+/*Loader*/
+.loader{
+    height: 4rem;    
+}
+
+/*ocultar*/
+.ocultar{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #d20222;
+    color: #EABE3F;
+    height: 10vh;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #EABE3F;
+}
+
+.footer a:hover{
+    color: whitesmoke;
+}
+
+/*btnUp*/
+.btnUp{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #d20222;    
+    right: 1rem;
+    bottom: 5rem;
+    font-size: 2rem;
+    font-weight: bolder;    
+    color: whitesmoke;
+    cursor: pointer;    
+}
+
+.btnUp:hover{
+    color: #EABE3F;    
+}
+
+/*hidden*/
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
