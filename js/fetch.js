@@ -5,7 +5,7 @@ export default async function loadPokemon(){
           
 
         try {
-            $containerCards.innerHTML = `<img class="loader" src="../assets/puff.svg" alt="cargando">`;
+            $containerCards.innerHTML = `<img class="loader" src=".././assets/puff.svg" alt="cargando">`;
             let resp = await fetch("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151"),
                 respJson = await resp.json();
     
